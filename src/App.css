@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+/* .container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-box {
   display: flex;
-  flex-direction: column;
+  margin-bottom: 20px;
+}
+h1{
+    text-align: center;
+}
+.search-box input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 0 5px 5px 0;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.list-box {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.list-box p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.list-box button {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.remove-all {
+  padding: 8px 15px;
+  margin-top: 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+} */
+
+
+
+/* Data Table */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial,sans-serif;
+}
+body{
+  background-color: #262626;
+  width: 100%;
+  height: 100vh;
+}
+.container{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.input-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+  width: 100%;
+  font-size: 18px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-box input{
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+.container .btn{
+  padding: 5px;
+  margin: 10px;
+  width: 80px;
+  height: 40px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+  background-color: green;
+  color: wheat;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container .btn:active{
+  background-color: 	#00A36C;
+}
+.search-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.search-box input{
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+table thead tr{
+  text-align: center;
+  color: #fff;
+  background-color: #00A36C;
+}
+table tbody tr{
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+}
+table tbody tr td{
+  padding: 5px;
+}
+table{
+  margin-top: 10px;
+}
+#edit-btn{
+  padding: 3px;
+  width: 50px;
+  background: brown;
+  border: 0;
+  border-radius: 5px;
+  margin: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+#del-btn{
+  padding: 3px;
+  width: 50px;
+  background:green;
+  border: 0;
+  border-radius: 5px;
+  margin: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+.App h1{
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 16px;
 }
